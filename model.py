@@ -1,10 +1,13 @@
 import streamlit as st
 import pickle
 import difflib
+import joblib  # make sure this import is there
+
+similarity = joblib.load(open("similarity_sparse4.pkl", "rb"))
 
 # Load files
 movies = pickle.load(open("movies.pkl", "rb"))         # numpy array of movie titles
-similarity = pickle.load(open("similarity_sparse4.pkl", "rb")) # precomputed similarity matrix
+
 
 # Recommendation logic
 def recommend(movie_name):
