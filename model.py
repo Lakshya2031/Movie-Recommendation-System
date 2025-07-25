@@ -6,7 +6,7 @@ import numpy as np
 
 # Load files (use relative paths)
 movies = pickle.load(open("movies.pkl", "rb"))  # list of movie titles
-similarity = joblib.load("similarity_sparse.pkl")  # sparse similarity matrix
+similarity = joblib.load("similarity_sparse4.pkl")  # sparse similarity matrix
 
 # Recommendation function
 def recommend(movie_name):
