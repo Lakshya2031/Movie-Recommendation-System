@@ -3,7 +3,7 @@ import pickle
 import difflib
 
 # Load files
-movies = pickle.load(open("C:/Users/HP/Downloads/movies.pkl", "rb"))         # numpy array of movie titles
+movies = pickle.load(open("movies.pkl", "rb"))         # numpy array of movie titles
 similarity = pickle.load(open("C:/Users/HP/Downloads/similarity.sav", "rb")) # precomputed similarity matrix
 
 # Recommendation logic
